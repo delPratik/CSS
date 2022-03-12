@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        .first{
+            color: aqua;
+        }
+        #second{
+            color: blue;
+        }
+        div h2{
+            color: blueviolet;
+        }
+        div > h3{
+            color: black;
+        }
+        .container > h4{
+            color: blue;
+        }
+        p + h1{
+            color: chartreuse;
+        }
+        p ~ h1{
+            color: chartreuse;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1 class="first">This is a heading</h1>
+        <h1 id="second">This is a heading</h1>
+    </div>
+    <div>
+        <h2>This is a heading</h2>
+        <h2>This is a heading</h2>
+    </div>
+    <div>
+        <h3>This is a heading</h3>
+        <h3>This is a heading</h3>
+    </div>
+    <div>
+        <div class="container">
+            <h4>This is first heading</h4>
+        </div>
+        <h4>This is second heading</h4>
+    </div>
+    <div>
+        <p>This is first heading</p>
+        <h1>This is seconnd heading</h1>
+        <h1>This is third heading</h1>
+    </div>
+    <div>
+        <h1>This is seconnd heading</h1>
+        <p>This is first heading</p>
+        <h1>This is seconnd heading</h1>
+        <h1>This is third heading</h1>
+    </div>
+</body>
+</html>
